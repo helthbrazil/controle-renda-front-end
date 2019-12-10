@@ -6,9 +6,13 @@
     </button>
     <span>{{title}}</span>
     <span class="example-spacer"></span>
-    <mat-chip-list aria-label="Fish selection">
-      <mat-chip color="warn" selected>R$1558,00</mat-chip>
+    <mat-chip-list *ngIf="valorConta" aria-label="Fish selection">
+      <mat-chip color="warn" selected>R${{valorConta}}</mat-chip>
     </mat-chip-list>
+    <mat-progress-spinner style="margin-right: 30px;" diameter="25" *ngIf="!valorConta" class="example-margin"
+      color="warn" mode="indeterminate">
+    </mat-progress-spinner>
+
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       <mat-icon>more_vert</mat-icon>
     </button>
@@ -67,7 +71,7 @@
 
   </mat-drawer>
 
-  <div style="padding: 10px !important;">
+  <div class="page-content">
     <router-outlet></router-outlet>
   </div>
 

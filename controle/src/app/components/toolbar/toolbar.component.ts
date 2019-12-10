@@ -10,11 +10,15 @@ export class ToolbarComponent implements OnInit {
 
   @Input() title: string;
   itemSelecionado = 0;
+  valorConta = ``;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.routeEvent(this.router);
+    setTimeout(() => {
+      this.valorConta = '1558,00';
+    }, 1000);
   }
 
   routeEvent(router: Router) {

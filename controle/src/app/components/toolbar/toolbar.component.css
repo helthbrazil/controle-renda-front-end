@@ -48,12 +48,19 @@ mat-sidenav {
 
 .ativo {
   background-color: rgb(184, 184, 184);
+  border-radius: 5px;
   color: white;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 mat-list-item :hover {
-  transition-duration: 0.1s;
+  transition-duration: 0.5s;
   transform: scale(1.2);
+}
+
+.page-content {
+  padding: 10px !important;
+  background-color: #f2f2f2 !important;
+  min-height: calc(100vh - 84px);
 }

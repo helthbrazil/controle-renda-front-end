@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfiguracaoComponent implements OnInit {
 
+  mostrarPorcentagem = { mostrar: false };
+  porcentagemComprometimentoAlerta = { percentual: 50 };
+  nomeUsuario = 'Hebert Ferreira';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toogle() {
+    this.mostrarPorcentagem.mostrar = !this.mostrarPorcentagem.mostrar;
+  }
+
+  formatLabel(value: number) {
+    return Math.round(value) + '%';
   }
 
 }

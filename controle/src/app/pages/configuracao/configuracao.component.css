@@ -3,5 +3,14 @@
 }
 
 .example-header-image {
+  background-image: url('../../../assets/svg/money2.svg');
   background-size: cover;
+}
+
+.salario {
+  padding-right: 10px;
+}
+
+mat-slider {
+  width: 300px;
 }

@@ -12,9 +12,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
 
 const modules = [MatTooltipModule, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule,
-  MatSidenavModule, MatListModule, MatCardModule, MatBadgeModule, MatChipsModule];
+  MatSidenavModule, MatListModule, MatCardModule, MatBadgeModule, MatChipsModule, MatProgressSpinnerModule,
+  MatInputModule, MatCheckboxModule, MatSlideToggleModule, MatSliderModule];
 
 @NgModule({
   declarations: [],

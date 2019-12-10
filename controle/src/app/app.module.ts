@@ -11,6 +11,8 @@ import { PaddingDirective } from './shared/directives/padding.directive';
 import { ConfiguracaoComponent } from './pages/configuracao/configuracao.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { RelatorioComponent } from './pages/relatorio/relatorio.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { RelatorioComponent } from './pages/relatorio/relatorio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     BrowserAnimationsModule
   ],
