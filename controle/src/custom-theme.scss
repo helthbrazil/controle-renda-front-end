@@ -13,10 +13,10 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $controle-primary: mat-palette($mat-cyan, 900);
-$controle-accent: mat-palette($mat-cyan, 800, 900, 900);
+$controle-accent: mat-palette($mat-grey, 600, 800, 900);
 
 // The warn palette is optional (defaults to red).
-$controle-warn: mat-palette($mat-red);
+$controle-warn: mat-palette($mat-orange, 800);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $controle-theme: mat-light-theme($controle-primary, $controle-accent, $controle-warn);

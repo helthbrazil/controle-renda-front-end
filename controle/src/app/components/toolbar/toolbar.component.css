@@ -11,13 +11,13 @@ mat-sidenav {
 }
 
 .menu {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 
 .mat-drawer-side {
-    border-right: 0px;
-  }
+  border-right: 0px;
+}
 
 .mat-sidenav::-webkit-scrollbar {
   width: 10px;
@@ -27,14 +27,14 @@ mat-sidenav {
 }
 
 .example-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 64px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 .mat-sidenav::-webkit-scrollbar-thumb {
   background: #3f51b5;
@@ -44,4 +44,16 @@ mat-sidenav {
 .mat-sidenav::webkit-scrollbar-thumb {
   background: #3f51b5;
   overflow-y: hidden;
+}
+
+.ativo {
+  background-color: rgb(184, 184, 184);
+  color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+mat-list-item :hover {
+  transition-duration: 0.1s;
+  transform: scale(1.2);
 }

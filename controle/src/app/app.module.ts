@@ -8,13 +8,19 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MaterialModule } from './material/material.module';
 import { PaddingDirective } from './shared/directives/padding.directive';
+import { ConfiguracaoComponent } from './pages/configuracao/configuracao.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { RelatorioComponent } from './pages/relatorio/relatorio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ToolbarComponent,
-    PaddingDirective
+    PaddingDirective,
+    ConfiguracaoComponent,
+    CadastroComponent,
+    RelatorioComponent
   ],
   imports: [
     BrowserModule,
