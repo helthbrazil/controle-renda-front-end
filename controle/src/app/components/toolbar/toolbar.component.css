@@ -1,0 +1,47 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav {
+  width: auto;
+}
+
+.menu {
+    margin-right: 10px;
+}
+
+
+.mat-drawer-side {
+    border-right: 0px;
+  }
+
+.mat-sidenav::-webkit-scrollbar {
+  width: 10px;
+  overflow-y: hidden;
+  height: 100px;
+  background-color: #3f51b5;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+.mat-sidenav::-webkit-scrollbar-thumb {
+  background: #3f51b5;
+  overflow-y: hidden;
+}
+
+.mat-sidenav::webkit-scrollbar-thumb {
+  background: #3f51b5;
+  overflow-y: hidden;
+}
