@@ -12,7 +12,9 @@ import { ConfiguracaoComponent } from './pages/configuracao/configuracao.compone
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { RelatorioComponent } from './pages/relatorio/relatorio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { HttpClientModule } from '@angular/common/http';
+import { InterceptorModule } from './shared/modules/interceptor/interceptor.module';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
+    InterceptorModule,
+    NgProgressModule.withConfig({
+      trickleSpeed: 200,
+      min: 20,
+      spinner: false,
+      color: '#f5f5f5',
+      meteor: false
+    }),
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

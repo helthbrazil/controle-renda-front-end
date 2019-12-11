@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CepService } from '../../shared/services/cep.service';
 
 @Component({
   selector: 'renda-configuracao',
@@ -11,9 +12,18 @@ export class ConfiguracaoComponent implements OnInit {
   porcentagemComprometimentoAlerta = { percentual: 50 };
   nomeUsuario = 'Hebert Ferreira';
 
-  constructor() { }
+  constructor(private cepService: CepService) { }
 
   ngOnInit() {
+    this.buscarCep();
+  }
+
+  public buscarCep() {
+    this.cepService.buscarCep('32223080').subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.error(err);
+    });
   }
 
   toogle() {
