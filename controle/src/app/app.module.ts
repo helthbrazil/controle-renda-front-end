@@ -16,6 +16,12 @@ import { NgProgressModule } from '@ngx-progressbar/core';
 import { HttpClientModule } from '@angular/common/http';
 import { InterceptorModule } from './shared/modules/interceptor/interceptor.module';
 
+// Charts
+import { ChartModule } from 'angular-highcharts';
+import { GraficoGastosComponent } from './components/grafico-gastos/grafico-gastos.component';
+import { GraficoGastosMensalComponent } from './components/grafico-gastos-mensal/grafico-gastos-mensal.component';
+import { TabelaGastosComponent } from './components/tabela-gastos/tabela-gastos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +30,10 @@ import { InterceptorModule } from './shared/modules/interceptor/interceptor.modu
     PaddingDirective,
     ConfiguracaoComponent,
     CadastroComponent,
-    RelatorioComponent
+    RelatorioComponent,
+    GraficoGastosComponent,
+    GraficoGastosMensalComponent,
+    TabelaGastosComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +42,7 @@ import { InterceptorModule } from './shared/modules/interceptor/interceptor.modu
     HttpClientModule,
     ReactiveFormsModule,
     InterceptorModule,
+    ChartModule,
     NgProgressModule.withConfig({
       trickleSpeed: 200,
       min: 20,

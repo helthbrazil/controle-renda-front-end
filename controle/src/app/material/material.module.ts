@@ -17,10 +17,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 const modules = [MatTooltipModule, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule,
   MatSidenavModule, MatListModule, MatCardModule, MatBadgeModule, MatChipsModule, MatProgressSpinnerModule,
-  MatInputModule, MatCheckboxModule, MatSlideToggleModule, MatSliderModule];
+  MatInputModule, MatCheckboxModule, MatSlideToggleModule, MatSliderModule, MatSortModule, MatTableModule];
 
 @NgModule({
   declarations: [],

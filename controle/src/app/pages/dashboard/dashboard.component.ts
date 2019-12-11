@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Chart } from 'angular-highcharts';
 @Component({
   selector: 'renda-dashboard',
   templateUrl: './dashboard.component.html',
