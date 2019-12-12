@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar style="z-index: 99999;"  color="primary">
 
   <mat-toolbar-row>
     <button class="menu" (click)="drawer.toggle()" mat-icon-button aria-label="Example icon-button with a heart icon">
@@ -44,25 +44,25 @@
 
     <mat-list role="list">
       <mat-list-item role="listitem">
-        <button [ngClass]="{ativo: itemSelecionado === 1}" routerLink="/dashboard" matTooltip="Dashboard"
+        <button  [ngClass]="{ativo: itemSelecionado === 1}" routerLink="/dashboard" matTooltip="Dashboard"
           matTooltipPosition="after" color="accent" mat-icon-button>
           <mat-icon>dashboard</mat-icon>
         </button>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <button [ngClass]="{ativo: itemSelecionado === 3}" [ngClass]="{ativo: teste}" routerLink="/cadastro"
+        <button  [ngClass]="{ativo: itemSelecionado === 3}" [ngClass]="{ativo: teste}" routerLink="/cadastro"
           matTooltip="cadastro" matTooltipPosition="after" color="accent" mat-icon-button>
           <mat-icon>add</mat-icon>
         </button>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <button [ngClass]="{ativo: itemSelecionado === 4}" routerLink="/relatorio" matTooltip="Relatório"
+        <button  [ngClass]="{ativo: itemSelecionado === 4}" routerLink="/relatorio" matTooltip="Relatório"
           matTooltipPosition="after" color="accent" mat-icon-button>
           <mat-icon>insert_chart</mat-icon>
         </button>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <button [ngClass]="{ativo: itemSelecionado === 2}" routerLink="/configuracao" matTooltip="Configuração"
+        <button  [ngClass]="{ativo: itemSelecionado === 2}" routerLink="/configuracao" matTooltip="Configuração"
           matTooltipPosition="after" color="accent" mat-icon-button>
           <mat-icon>settings</mat-icon>
         </button>

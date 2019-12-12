@@ -39,11 +39,11 @@ export class GraficoGastosComponent implements OnInit {
         y: 78.00,
         sliced: false,
         selected: false,
-        color: '#e53935'
+        color: '#b71c1c'
       }, {
         name: 'Disponível',
         y: 22.00,
-        color: '#43a047'
+        color: '#1b5e20'
       }
       ],
       type: undefined,

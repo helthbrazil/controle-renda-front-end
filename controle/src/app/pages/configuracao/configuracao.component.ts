@@ -11,7 +11,6 @@ export class ConfiguracaoComponent implements OnInit {
   mostrarPorcentagem = { mostrar: false };
   porcentagemComprometimentoAlerta = { percentual: 50 };
   nomeUsuario = 'Hebert Ferreira';
-  list = [1, 2, 3, 4, 5, 6, 7, 8];
 
   constructor(private cepService: CepService) { }
 

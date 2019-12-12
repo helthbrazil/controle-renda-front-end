@@ -45,8 +45,9 @@ export class GraficoGastosMensalComponent implements OnInit {
       }
     },
     series: [{
-      name: 'Gasto',
-      data: [2, 3, 0, 4, 0, 5, 1, 4, 6, 3, 10],
+      name: 'Gastos',
+      color: '#455a64',
+      data: [3000, 3500, 3000, 3700, 3900, 4200, 4000, 5000, 4700, 5100, 6300],
       type: undefined
     }]
   });

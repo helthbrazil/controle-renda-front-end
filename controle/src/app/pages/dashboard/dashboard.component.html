@@ -1,25 +1,33 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-4">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <renda-grafico-gastos></renda-grafico-gastos>
       </mat-card>
     </div>
     <div class="col-lg-4">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <renda-grafico-gastos-mensal></renda-grafico-gastos-mensal>
       </mat-card>
     </div>
 
     <div class="col-lg-4">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <renda-grafico-gastos></renda-grafico-gastos>
       </mat-card>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12">
-      <renda-tabela-gastos></renda-tabela-gastos>
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Compras - Dezembro 2019</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <br>
+        <renda-tabela-gastos></renda-tabela-gastos>
+      </mat-card>
     </div>
   </div>
 </div>

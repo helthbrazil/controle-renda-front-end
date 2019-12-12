@@ -48,7 +48,7 @@ mat-sidenav {
 
 .ativo {
   background-color: rgb(184, 184, 184);
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;

@@ -21,6 +21,7 @@ import { ChartModule } from 'angular-highcharts';
 import { GraficoGastosComponent } from './components/grafico-gastos/grafico-gastos.component';
 import { GraficoGastosMensalComponent } from './components/grafico-gastos-mensal/grafico-gastos-mensal.component';
 import { TabelaGastosComponent } from './components/tabela-gastos/tabela-gastos.component';
+import { GraficoTipoComponent } from './components/grafico-tipo/grafico-tipo.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TabelaGastosComponent } from './components/tabela-gastos/tabela-gastos.
     RelatorioComponent,
     GraficoGastosComponent,
     GraficoGastosMensalComponent,
-    TabelaGastosComponent
+    TabelaGastosComponent,
+    GraficoTipoComponent
   ],
   imports: [
     BrowserModule,
