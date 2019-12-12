@@ -1,6 +1,5 @@
 table {
-  width: 100%;
-  max-height: 300px !important;
+  width: 100%;  
 }
 
 th.mat-sort-header-sorted {
@@ -8,7 +7,7 @@ th.mat-sort-header-sorted {
 }
 
 .example-container {
-  height: 400px;
+  height: 300px;
   overflow: auto;
 }
 
