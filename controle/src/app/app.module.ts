@@ -22,6 +22,7 @@ import { GraficoGastosComponent } from './components/grafico-gastos/grafico-gast
 import { GraficoGastosMensalComponent } from './components/grafico-gastos-mensal/grafico-gastos-mensal.component';
 import { TabelaGastosComponent } from './components/tabela-gastos/tabela-gastos.component';
 import { GraficoTipoComponent } from './components/grafico-tipo/grafico-tipo.component';
+import { InfoComponent } from './pages/info/info.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GraficoTipoComponent } from './components/grafico-tipo/grafico-tipo.com
     GraficoGastosComponent,
     GraficoGastosMensalComponent,
     TabelaGastosComponent,
-    GraficoTipoComponent
+    GraficoTipoComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

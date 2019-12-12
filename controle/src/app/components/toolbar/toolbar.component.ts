@@ -23,8 +23,6 @@ export class ToolbarComponent implements OnInit {
 
   routeEvent(router: Router) {
 
-    console.log('ENTROU AQUI!!!');
-
     router.events.subscribe(e => {
       if (e instanceof NavigationStart) {
         console.log(e);
@@ -51,6 +49,10 @@ export class ToolbarComponent implements OnInit {
 
       case '/relatorio':
         this.itemSelecionado = 4;
+        break;
+
+      case '/info':
+        this.itemSelecionado = 5;
         break;
 
       default:

@@ -67,6 +67,12 @@
           <mat-icon>settings</mat-icon>
         </button>
       </mat-list-item>
+      <mat-list-item role="listitem">
+          <button  [ngClass]="{ativo: itemSelecionado === 5}" routerLink="/info" matTooltip="Informação"
+            matTooltipPosition="after" color="accent" mat-icon-button>
+            <mat-icon>info</mat-icon>
+          </button>
+        </mat-list-item>
     </mat-list>
 
   </mat-drawer>
