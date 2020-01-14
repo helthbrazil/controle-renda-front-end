@@ -13,7 +13,12 @@ export class GraficoGastosComponent implements OnInit {
       plotBackgroundColor: null,
       plotBorderWidth: null,
       plotShadow: false,
-      type: 'pie'
+      type: 'pie',
+      options3d: {
+        enabled: true,
+        alpha: 45,
+        beta: 0
+      }
     },
     title: {
       text: 'Gráfico de gastos Dezembro 2019'
@@ -25,6 +30,7 @@ export class GraficoGastosComponent implements OnInit {
       pie: {
         allowPointSelect: true,
         cursor: 'pointer',
+        depth: 50,
         dataLabels: {
           enabled: true,
           format: '<b>{point.name}</b>: {point.percentage:.1f} %'

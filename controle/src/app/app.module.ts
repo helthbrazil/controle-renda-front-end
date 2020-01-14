@@ -17,12 +17,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { InterceptorModule } from './shared/modules/interceptor/interceptor.module';
 
 // Charts
-import { ChartModule } from 'angular-highcharts';
+import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
+import * as Highcharts from 'highcharts';
+import exporting from 'highcharts/modules/exporting.src';
+import highcharts3D from 'highcharts/highcharts-3d.src';
+
 import { GraficoGastosComponent } from './components/grafico-gastos/grafico-gastos.component';
 import { GraficoGastosMensalComponent } from './components/grafico-gastos-mensal/grafico-gastos-mensal.component';
 import { TabelaGastosComponent } from './components/tabela-gastos/tabela-gastos.component';
 import { GraficoTipoComponent } from './components/grafico-tipo/grafico-tipo.component';
 import { InfoComponent } from './pages/info/info.component';
+import { GraficoTesteComponent } from './components/grafico-teste/grafico-teste.component';
+
+export function highchartsModules() {
+  // apply Highcharts Modules to this array
+  return [highcharts3D , exporting ];
+ }
 
 @NgModule({
   declarations: [
@@ -37,7 +47,8 @@ import { InfoComponent } from './pages/info/info.component';
     GraficoGastosMensalComponent,
     TabelaGastosComponent,
     GraficoTipoComponent,
-    InfoComponent
+    InfoComponent,
+    GraficoTesteComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +69,7 @@ import { InfoComponent } from './pages/info/info.component';
     BrowserAnimationsModule
   ],
   providers: [
+    { provide: HIGHCHARTS_MODULES, useFactory: highchartsModules },
   ],
   bootstrap: [AppComponent]
 })

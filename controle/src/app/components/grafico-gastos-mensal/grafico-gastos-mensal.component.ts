@@ -11,13 +11,7 @@ export class GraficoGastosMensalComponent implements OnInit {
 
   chart = new Chart({
     chart: {
-      type: 'column',
-      options3d: {
-        enabled: true,
-        alpha: 10,
-        beta: 25,
-        depth: 70
-      }
+      type: 'line'     
     },
     title: {
       text: 'Gastos 2019'
