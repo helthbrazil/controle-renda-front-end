@@ -6,3 +6,8 @@ mat-card {
   background-image: url('../../../assets/svg/money3.svg');
   background-size: cover;
 }
+
+.card {
+  max-height: 400px;
+  border: 0px;
+}
